@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{title}} - Order List</title>
+    </head>
+    <body>
+        <h1>Customer Order List</h1>
+        {% for order in order %}
+        <div>
+            <p>  <a href="orders/2"> {{order.customer}}</a>: <b>{{order.order_date}}, {{order.quantity}}, {{order.game_title}}, {{order.studio}}</b></p>
+        </div>
+        {% endfor %}
+
+    </body>
+</html>
